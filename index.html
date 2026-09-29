@@ -1,8 +1,14 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SDMT Tijdregistratie</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
+html,body{margin:0}[hidden]{display:none!important}img{max-width:100%}
 /* Layout: één kolom, klinisch rustig; testscherm = sleutel boven, items midden, toetsenrij onder, uitgelijnd op 9 kolommen */
 :root{
   --bg:#eef2f3; --surface:#ffffff; --ink:#15232a; --muted:#5a6a71; --line:#d3dcdf;
@@ -86,6 +92,8 @@ textarea{width:100%;min-height:140px;font-family:var(--f-data);font-size:.78rem;
 .tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;background:var(--err-soft);color:var(--err);padding:2px 8px;border-radius:99px;font-weight:700}
 @media (prefers-reduced-motion:reduce){.key{transition:none}}
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header class="top">
@@ -365,3 +373,5 @@ $('demoBtn').addEventListener('click',()=>{
 });
 renderHist();
 </script>
+</body>
+</html>
